@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Translator</h1>
+        <p>Translate text instantly between any language pairs.</p>
+    </header>
+    <main>
+        <section class="language-selection">
+            <label for="source-lang">Source Language:</label>
+            <select id="source-lang"></select>
+
+            <button id="swap-languages">⇄</button>
+
+            <label for="target-lang">Target Language:</label>
+            <select id="target-lang"></select>
+        </section>
+
+        <section class="translation">
+            <textarea id="input-text" placeholder="Enter text to translate"></textarea>
+            <button id="translate-button">Translate</button>
+            <textarea id="output-text" readonly placeholder="Translation will appear here"></textarea>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
